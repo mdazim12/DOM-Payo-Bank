@@ -9,6 +9,16 @@
             const balance = getTextFieldById('account-balance');
             const newBalance = addMoney + balance;
             document.getElementById('account-balance').innerText = newBalance;
+
+            //add to transation history
+
+            const p = document.createElement('p');
+            p.innerText = `Added : ${addMoney} TK. New Balance : ${newBalance}`;
+            
+            //show it on transation area using appped
+            document.getElementById('transaction-container').appendChild(p);
+
+
         }
         else{
             alert('Wrong PIN Number');

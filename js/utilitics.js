@@ -17,5 +17,10 @@
     }
 
     function showSectionById(id){
-        
+        document.getElementById('add-money-form').classList.add('hidden');
+        document.getElementById('cashout-form').classList.add('hidden');
+        document.getElementById('transation-section').classList.add('hidden');
+
+        // SHOW THE SECTION WITH TEH PROVIDE ID AS A PARAMTER
+        document.getElementById(id).classList.remove('hidden');
     }
