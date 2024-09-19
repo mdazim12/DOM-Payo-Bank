@@ -15,3 +15,7 @@
         const textNumber = parseFloat(textValue);
         return textNumber;
     }
+
+    function showSectionById(id){
+        
+    }
